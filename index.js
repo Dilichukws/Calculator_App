@@ -65,8 +65,6 @@ const updateTime = ()=>{
     let currentHour = currentTime.getHours()
     const currentMinute = currentTime.getMinutes()
 
-    
-
     hrs.innerText = currentHour.toString()
     mins.innerText = currentMinute.toString().padStart(2, '0')
 }
