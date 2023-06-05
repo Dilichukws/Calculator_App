@@ -1,0 +1,88 @@
+:root {
+    --teal: #005755;
+    --background: #101010;
+    --d-background: #222222;
+    --h-background: #333333;
+    --h-teal-background: #006664;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.clock {
+    background: var(--teal);
+    color: #fff;
+    font-weight: bold;
+    padding: 0.5em;
+    width: 4em;
+    text-align: center;
+    margin: auto;
+    border-radius: 25px;
+    cursor: none;
+}
+.calculator {
+    background: var(--background);
+    margin: 5em auto;
+    width: 25em;
+}
+
+.display{
+    height: 6em;
+    font-size: 1.7em;
+    text-align: right;
+    line-height: 8em;
+    color: #fff;
+    padding: 0 0.5em;
+}
+
+.controls{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 1.7em auto;
+    background: var(--background);
+}
+
+.controls button {
+
+    height: 5.5em;
+    background: var(--d-background);
+    color: #fff;
+    border-radius: 0.5em;
+    border: unset;
+    outline: unset;
+    margin: 0.5em;
+    cursor: pointer;
+    user-select: none;
+}
+
+.controls button:hover {
+    background: var(--h-background);
+}
+
+.controls button:active{
+    transform: translateY(0.5em);
+}
+
+
+.controls .teal{
+    background: var(--teal);
+    font-weight: bold;
+}
+
+.controls .teal:hover{
+    background: var(--h-teal-background);
+}
+
+@media  screen and (max-width: 768px) {
+    .calculator{
+        width: 100vw;
+        height: 100vh;
+        margin: auto;
+    }
+
+    
+}
